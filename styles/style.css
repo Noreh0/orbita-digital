@@ -1,0 +1,116 @@
+:root {
+  --white-color: #ffffff;
+  --orange-color: #ff6b4a;
+  --border: #e4e0d8;
+  --dark-blue: #0e2338;
+  --dark-blue-text: #22303c;
+  --shadow-color: 0 12px 30px -14px rgba(3, 129, 255, 0.977);
+  --max-width: 1180px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", Arial, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.site-header {
+  background-color: var(--white-color);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 24px;
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Sora", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--dark-blue);
+}
+
+.logo-mark {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--dark-blue), var(--orange-color));
+  flex-shrink: 0;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-links a {
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--dark-blue-text);
+  padding: 6px 2px;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-links a:hover,
+.nav-links a[aria-current="page"] {
+  color: var(--orange-color);
+  border-bottom-color: var(--orange-color);
+}
+
+.btn {
+  align-items: center;
+  padding: 14px 26px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: crosshair;
+  border: 2px solid transparent;
+  transition: 0.9s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background-color: var(--orange-color);
+  color: var(--white-color);
+  box-shadow: var(--shadow-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--dark-blue);
+}
+
+.nav-cta {
+  display: inline-flex;
+}
+
+@media (max-width: 860px) {
+  .nav-cta {
+    display: inline-flex;
+  }
+}
+
+
+.btn-primary{
+  border-top: 1px solid brown;
+}
